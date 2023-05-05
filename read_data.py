@@ -1,13 +1,8 @@
-from torch.utils.data import Dataset
 from PIL import Image
-import cv2
 
-img_path = "E:\S\code\CodeTest\Mound-Pytorch\hymenoptera_data\\train\\ants\\0013035.jpg"
+img_path = "D:\S\start\code\CodeTest\Mound-Pytorch\hymenoptera_data\\val\\ants\800px-Meat_eater_ant_qeen_excavating_hole.jpg"
+
 img = Image.open(img_path)
-print(img.size)
-img.show
 
-# class MyData(Dataset):
-    
-#     def __init__(self):
-        
+print(img.size, img.format)
+img.show()
